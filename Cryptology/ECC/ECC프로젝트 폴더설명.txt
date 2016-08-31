@@ -1,0 +1,9 @@
+-응용프로그램 ECC(프로그램)
+-압축폴더 ECC는 MFC형식.
+-한글파일 ECC보고서
+-압축폴더 ellipse_curve는 Microsoft visual studio형식(.cpp)
+
+으로 구성됨.
+
+(cf, 프로그램은 모두 Microsoft visual studio 2012로 작성됨.
+     한글문서는 한컴 2010으로 작성됨.) 
