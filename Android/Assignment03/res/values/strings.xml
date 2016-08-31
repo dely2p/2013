@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Assignment03</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="my">나의 소개</string>
+    <string name="mapview">지도</string>
+    <string name="map_name">서울시 송파구 거여동</string>
+</resources>

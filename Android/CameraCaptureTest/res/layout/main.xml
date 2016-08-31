@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	<Button 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:text="캡처"
+		android:id="@+id/capture" />
+	<Button 
+		android:layout_height="wrap_content" 
+		android:text="처리1"
+		android:layout_width="wrap_content" 
+		android:id="@+id/process" />
+	<Button 
+		android:layout_height="wrap_content" 
+		android:text="처리2"
+		android:layout_width="wrap_content" 
+		android:id="@+id/process2" />
+	<Button 
+		android:layout_height="wrap_content" 
+		android:text="처리3"
+		android:layout_width="wrap_content" 
+		android:id="@+id/process3" />
+	<ImageView 
+		android:id="@+id/imageview" 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+</LinearLayout>

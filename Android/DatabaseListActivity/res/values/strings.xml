@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DatabaseListActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="act_join_form">customconfirm</string>
+    <string name="name">name</string>
+	<string name="sex">sex</string>	
+	<string name="sms">sms</string>
+
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.skuniv.ce.databaselistactivity.CustomListActivity&apos; to &apos;CustomRegActivity&apos;&#x0D;&#x0A;- Original project: &apos;DatabaseListActivity&apos;&#x0D;&#x0A;- Original element: &apos;com.skuniv.ce.databaselistactivity.CustomListActivity&apos;&#x0D;&#x0A;- Renamed element: &apos;com.skuniv.ce.databaselistactivity.CustomRegActivity&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CustomListActivity&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.skuniv.ce.databaselistactivity{CustomListActivity.java[CustomListActivity" matchStrategy="1" name="CustomRegActivity" qualified="false" references="true" similarDeclarations="false" stamp="1386572878839" textual="false" version="1.0"/>
+</session>

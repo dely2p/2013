@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Assignment04/res/layout/custom_dialog.xml&apos; to &apos;customdialog.xml&apos;" description="Rename resource &apos;custom_dialog.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/custom_dialog.xml" name="customdialog.xml" stamp="1381662061938" updateReferences="true"/>
+</session>

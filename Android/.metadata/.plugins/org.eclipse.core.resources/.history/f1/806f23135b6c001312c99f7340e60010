@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bt"
+    android:orientation="vertical" >
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/progress_style"
+        android:thumb="@drawable/one_button180" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="230dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/left" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/car_main2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="230dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/right" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/normal"
+            android:src="@drawable/normal" />
+    </LinearLayout>
+
+</LinearLayout>
