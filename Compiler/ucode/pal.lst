@@ -1,0 +1,84 @@
+
+ line       object           ucode  source program
+
+   1    (38    1    1)                sym  1 1 1    //int org
+   2    (38    1    2)                sym  1 2 1    //int rev
+   3    (38    1    3)                sym  1 3 1    //int i
+   4    (38    1    4)                sym  1 4 1    //int j
+   5    (37    4     )                bgn  4
+   6    (23          )                ldp
+   7    (21    1    1)                lda  1 1
+   8    (29   -1     )                call  read    //read(org)
+   9    (34          )     $$1        nop
+  10    (19    1    1)                lod  1 1 
+  11    (20    0     )                ldc  0
+  12    (14          )                lt            //if(org<0)
+  13    (28   18     )                fjp  $$2
+  14    (20    0     )                ldc  -1       
+  15    (19    1    1)                lod  1 1
+  16    ( 8          )                mult
+  17    (24    1    1)                str  1 1      //org = -1 * org
+  18    (34          )     $$2        nop           
+  19    (19    1    1)                lod  1 1
+  20    (24    1    3)                str  1 3      //i=org
+  21    (20    0     )                ldc  0
+  22    (24    1    2)                str  1 2      //rev=0
+  23    (34          )     $$3        nop           //while(
+  24    (19    1    3)                lod  1 3
+  25    (20    0     )                ldc  0
+  26    (18          )                ne            //i != 0
+  27    (28   43     )                fjp  $$4
+  28    (19    1    3)                lod  1 3
+  29    (20   10     )                ldc  10
+  30    (10          )                mod           //j = i % 10
+  31    (24    1    4)                str  1 4
+  32    (19    1    4)                lod  1 4
+  33    (19    1    2)                lod  1 2
+  34    (20   10     )                ldc  10
+  35    ( 8          )                mult
+  36    ( 6          )                add
+  37    (24    1    2)                str  1 2      //rev = rev+j
+  38    (19    1    3)                lod  1 3
+  39    (20   10     )                ldc  10
+  40    ( 9          )                div
+  41    (24    1    3)                str  1 3      //i/=10
+  42    (26   23     )                ujp  $$3
+  43    (34          )     $$4        nop
+  44    (19    1    2)                lod  1 2      
+  45    (19    1    1)                lod  1 1
+  46    (17          )                eq             //rev == org
+  47    (28   51     )                fjp  $$5
+  48    (23          )                ldp
+  49    (19    1    1)                lod  1 1
+  50    (29   -2     )                call  write     //write(org)
+  51    (34          )     $$5        nop
+  52    (36          )                end
+
+
+   ****    Result    ****
+
+
+
+
+             ##### Statistics #####
+
+
+    ****  Static Instruction Counts  ****
+
+add    =  1       mult   =  2       div    =  1       mod    =  1       
+lt     =  1       eq     =  1       ne     =  1       lod    =  11      
+ldc    =  7       lda    =  1       ldp    =  2       str    =  6       
+ujp    =  1       fjp    =  3       call   =  2       nop    =  5       
+end    =  1       bgn    =  1       sym    =  4       
+
+    ****  Dynamic instruction counts  ****
+
+add    =  5         mult   =  5         div    =  5         mod    =  5         
+lt     =  1         eq     =  1         ne     =  6         lod    =  30        
+ldc    =  23        lda    =  1         ldp    =  1         str    =  17        
+ujp    =  5         fjp    =  8         call   =  1         nop    =  10        
+end    =  1         bgn    =  1         
+
+ Executable instruction count  =   114
+
+ Total execution cycle         =   1985

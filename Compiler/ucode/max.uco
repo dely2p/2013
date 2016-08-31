@@ -1,0 +1,30 @@
+           sym  1 1 1    //int i
+           sym  1 2 1    //int max
+           bgn  2
+           ldc  1
+           str  1 1
+           ldc  0
+           str  1 2           
+$$1        nop
+           lod  1 1 
+           ldc  0
+           ne            //i!=0
+           fjp  $$2
+           ldp
+           lda  1 1
+           call  read    //read(i)
+$$3        nop
+           lod  1 1
+           lod  1 2
+           gt  
+           fjp  $$5
+           lod  1 1
+           str  1 2 
+$$5        nop
+           ujp  $$1                     
+$$2        nop
+           ldp
+           lod  1 2
+           call  write
+$$4        nop
+           end
